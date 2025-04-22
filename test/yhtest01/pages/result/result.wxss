@@ -1,0 +1,93 @@
+/* result.wxss */
+.container {
+  padding: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 80vh;
+  background-color: white;
+}
+
+.result-summary {
+  background-color: white;
+  border-radius: 20rpx;
+  padding: 40rpx;
+  margin-bottom: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-title {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 20rpx;
+}
+
+.score-display {
+  font-size: 120rpx;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 40rpx 0;
+}
+
+/* 统计信息布局 */
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20rpx;
+  padding: 30rpx 0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 50rpx;
+}
+
+.stat-value {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: var(--text-color);
+  margin-bottom: 10rpx;
+}
+
+.stat-label {
+  font-size: 28rpx;
+  color: var(--light-text);
+}
+
+.stat-divider {
+  width: 2rpx;
+  height: 80rpx;
+  background-color: #eee;
+}
+
+/* 按钮布局 */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40rpx;
+  width: 100%;
+}
+
+.action-btn {
+  width: 90%;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin-bottom: 30rpx;
+  font-size: 32rpx;
+  white-space: nowrap;
+}
+
+/* 为了确保按钮内文字居中，取消默认内边距 */
+.btn {
+  padding-left: 0;
+  padding-right: 0;
+} 

@@ -1,0 +1,43 @@
+<!--share.wxml-->
+<navigation-bar title="分享成绩" back="{{true}}" color="black" background="#f5f5f5" bind:back="goBack"></navigation-bar>
+<view class="container">
+  <view class="share-card">
+    <view class="share-title">我在疯狂猜词中获得了</view>
+    <view class="share-score">{{score}}</view>
+    <view class="share-subtitle">的高分！来挑战我吧！</view>
+    
+    <view class="score-details">
+      <view class="detail-item">
+        <text class="detail-value">{{correctCount}}</text>
+        <text class="detail-label">猜对</text>
+      </view>
+      <view class="detail-divider"></view>
+      <view class="detail-item">
+        <text class="detail-value">{{skipCount}}</text>
+        <text class="detail-label">跳过</text>
+      </view>
+    </view>
+    
+    <view class="share-image-container">
+      <!-- 暂时使用纯色背景替代图片 -->
+      <view class="share-image-placeholder">分享图片预览区域</view>
+    </view>
+  </view>
+  
+  <view class="share-buttons">
+    <view class="share-platforms">
+      <view class="share-platform-item">
+        <view class="platform-icon-placeholder">微信</view>
+      </view>
+      <view class="share-platform-item">
+        <view class="platform-icon-placeholder">朋友圈</view>
+      </view>
+      <view class="share-platform-item">
+        <view class="platform-icon-placeholder">QQ</view>
+      </view>
+    </view>
+    
+    <button class="btn btn-primary save-btn" bindtap="saveToAlbum">保存图片</button>
+    <button class="btn btn-default home-btn" bindtap="goToHome">返回首页</button>
+  </view>
+</view> 

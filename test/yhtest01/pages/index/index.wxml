@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<navigation-bar title="疯狂猜词" back="{{false}}" color="black" background="#f5f5f5"></navigation-bar>
+<scroll-view class="scrollarea" scroll-y type="list">
+  <view class="container">
+    <view class="logo-container">
+      <view class="logo-text">猜词</view>
+    </view>
+    
+    <view class="title-container">
+      <text class="game-title">疯狂猜词</text>
+    </view>
+    
+    <view class="button-container">
+      <button class="btn btn-primary start-btn" bindtap="startGame">开始游戏</button>
+      <button class="btn btn-default rules-btn" bindtap="goToRules">规则说明</button>
+    </view>
+    
+    <view class="settings-btn" bindtap="goToSettings">
+      <text class="settings-text">设置</text>
+    </view>
+  </view>
+</scroll-view>

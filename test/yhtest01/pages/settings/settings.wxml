@@ -1,0 +1,42 @@
+<!--settings.wxml-->
+<navigation-bar title="设置" back="{{true}}" color="black" background="#f5f5f5" bind:back="goBack"></navigation-bar>
+<view class="container">
+  <view class="card settings-card">
+    <view class="setting-item">
+      <view class="setting-label">音效</view>
+      <view class="switch-container" bindtap="toggleSound">
+        <view class="switch {{soundEnabled ? 'switch-on' : 'switch-off'}}">
+          <view class="switch-circle"></view>
+        </view>
+      </view>
+    </view>
+    
+    <view class="setting-section">
+      <view class="subtitle">计时器时间</view>
+      <view class="option-container">
+        <block wx:for="{{timeOptions}}" wx:key="value">
+          <view 
+            class="option-item {{selectedTime === item.value ? 'selected' : ''}}" 
+            bindtap="selectTime" 
+            data-time="{{item.value}}">
+            {{item.name}}
+          </view>
+        </block>
+      </view>
+    </view>
+    
+    <view class="setting-section">
+      <view class="subtitle">词库选择</view>
+      <view class="option-container">
+        <block wx:for="{{wordOptions}}" wx:key="value">
+          <view 
+            class="option-item {{selectedWordSet === item.value ? 'selected' : ''}}" 
+            bindtap="selectWordSet" 
+            data-wordset="{{item.value}}">
+            {{item.name}}
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view> 

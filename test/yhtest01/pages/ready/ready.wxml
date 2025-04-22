@@ -1,0 +1,10 @@
+<!--ready.wxml-->
+<view class="container">
+  <view class="ready-text">准备开始</view>
+  
+  <view class="countdown">
+    {{countdown}}
+  </view>
+  
+  <view class="tip-text">请将手机举过头顶，让其他玩家看到词语</view>
+</view> 

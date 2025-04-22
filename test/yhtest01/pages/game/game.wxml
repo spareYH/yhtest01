@@ -1,0 +1,37 @@
+<!--game.wxml-->
+<view class="container">
+  <view class="timer-container">
+    <view class="timer {{timeLeft <= 10 ? 'timer-warning' : ''}}">
+      {{timeLeft}}
+    </view>
+  </view>
+  
+  <view class="score-container">
+    <view class="score">得分: {{score}}</view>
+  </view>
+  
+  <view class="word-container">
+    <view class="word">{{word}}</view>
+  </view>
+  
+  <!-- 改为更自然的左右触控区域，不使用明显的按钮 -->
+  <view class="action-areas">
+    <view class="action-area correct-area {{correctActive ? 'active' : ''}}" bindtap="onCorrect">
+      <view class="area-hint">
+        <view class="hint-icon">√</view>
+      </view>
+    </view>
+    
+    <view class="action-area skip-area {{skipActive ? 'active' : ''}}" bindtap="onSkip">
+      <view class="area-hint">
+        <view class="hint-icon">×</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 添加提示说明 -->
+  <view class="action-hints">
+    <view class="left-hint">左侧: 猜对</view>
+    <view class="right-hint">右侧: 跳过</view>
+  </view>
+</view> 

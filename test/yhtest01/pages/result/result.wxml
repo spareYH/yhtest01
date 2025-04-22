@@ -1,0 +1,26 @@
+<!--result.wxml-->
+<navigation-bar title="游戏结果" back="{{false}}" color="black" background="#f5f5f5"></navigation-bar>
+<view class="container">
+  <view class="result-summary">
+    <view class="score-title">本轮得分</view>
+    <view class="score-display">{{score}}</view>
+    
+    <view class="stats-container">
+      <view class="stat-item">
+        <text class="stat-value">{{correctCount}}</text>
+        <text class="stat-label">猜对</text>
+      </view>
+      <view class="stat-divider"></view>
+      <view class="stat-item">
+        <text class="stat-value">{{skipCount}}</text>
+        <text class="stat-label">跳过</text>
+      </view>
+    </view>
+  </view>
+  
+  <view class="button-container">
+    <button class="btn btn-primary action-btn" bindtap="playAgain">再来一局</button>
+    <button class="btn btn-default action-btn" bindtap="goToHome">返回首页</button>
+    <button class="btn btn-secondary action-btn" bindtap="shareScore">分享成绩</button>
+  </view>
+</view> 

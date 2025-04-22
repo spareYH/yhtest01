@@ -1,0 +1,27 @@
+<!--rules.wxml-->
+<navigation-bar title="游戏规则" back="{{true}}" color="black" background="#f5f5f5" bind:back="goBack"></navigation-bar>
+<view class="container">
+  <view class="card rules-card">
+    <view class="title">游戏规则</view>
+    <view class="rule-item">
+      <view class="rule-num">1</view>
+      <view class="rule-text">一名玩家手持设备，屏幕显示词语，但持有者看不到</view>
+    </view>
+    <view class="rule-item">
+      <view class="rule-num">2</view>
+      <view class="rule-text">其他玩家通过语言或肢体动作描述该词语</view>
+    </view>
+    <view class="rule-item">
+      <view class="rule-num">3</view>
+      <view class="rule-text">持有者根据描述猜测词语</view>
+    </view>
+    <view class="rule-item">
+      <view class="rule-num">4</view>
+      <view class="rule-text">猜对点击左侧区域(√)，放弃点击右侧区域(×)</view>
+    </view>
+    <view class="rule-item">
+      <view class="rule-num">5</view>
+      <view class="rule-text">规定时间内猜对词语越多，得分越高</view>
+    </view>
+  </view>
+</view> 

@@ -1,0 +1,84 @@
+/* settings.wxss */
+.container {
+  padding: 30rpx;
+}
+
+.settings-card {
+  padding: 40rpx;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #eee;
+}
+
+.setting-label {
+  font-size: 32rpx;
+}
+
+.switch-container {
+  padding: 10rpx;
+}
+
+.switch {
+  width: 100rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.switch-on {
+  background-color: var(--primary-color);
+}
+
+.switch-off {
+  background-color: #ddd;
+}
+
+.switch-circle {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 5rpx;
+  transition: all 0.3s;
+}
+
+.switch-on .switch-circle {
+  right: 5rpx;
+}
+
+.switch-off .switch-circle {
+  left: 5rpx;
+}
+
+.setting-section {
+  margin: 40rpx 0;
+}
+
+.option-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20rpx -10rpx;
+}
+
+.option-item {
+  flex: 1;
+  min-width: 150rpx;
+  text-align: center;
+  padding: 15rpx 10rpx;
+  margin: 10rpx;
+  background-color: #eee;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+}
+
+.option-item.selected {
+  background-color: var(--primary-color);
+  color: white;
+} 
